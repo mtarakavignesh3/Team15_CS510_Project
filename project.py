@@ -32,4 +32,7 @@ data['tweetcontent'] = data['tweetcontent'].apply(' '.join)
 
 print(data.head(1))
 
-# Step 3: Feed the pre-processed data to the model
+#Next Steps: 
+#Feed the pre-processed data to the model
+#Train an existing model on our pre-processed data
+#Use that model to get ouputs as needed
