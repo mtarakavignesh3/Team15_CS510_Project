@@ -112,5 +112,13 @@ for doc in corpus:
 
 # Add the dominant topic information to the DataFrame
 data['dominant_topic'] = dominant_topics
-topic3_tweets = data[data['dominant_topic'] == 3] 
-print(topic3_tweets['tweetcontent'])
+grouped = data.groupby('username')
+
+# Create a dictionary with usernames as keys and lists of unique topics as values
+user_topics_dict = {name: list(set(group['dominant_topic'])) for name, group in grouped}
+
+# Filter the dictionary to keep only entries with more than one topic
+user_topics_dict_filtered = {k: v for k, v in user_topics_dict.items() if len(v) > 2}
+
+# Print the filtered dictionary
+print(user_topics_dict_filtered)
