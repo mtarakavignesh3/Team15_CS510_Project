@@ -156,6 +156,7 @@ data['sentiment_compound'] = data['sentiment'].apply(lambda x: x['compound'])  #
 data['sentiment_label'] = data['sentiment_compound'].apply(lambda x: 'positive' if x > 0 else 'negative' if x < 0 else 'neutral')  # Label based on compound score
 
 # Print the tweet content, category, and sentiment label
-print(data[['tweetcontent', 'category', 'sentiment_label']])  # Show tweet content, category, and sentiment label
+#print(data[['tweetcontent', 'category', 'sentiment_label']])  # Show tweet content, category, and sentiment label
 
 
+data.to_excel("output.xlsx", index = False)
