@@ -17,6 +17,7 @@ from gensim import corpora
 from gensim.models import LdaModel
 from sklearn.feature_extraction.text import CountVectorizer
 import string
+from gensim.models import LdaModel
 
 # Step 1: Read the Excel data
 data = pd.read_excel("CleanedTrainingData_mod.xlsx")
@@ -95,30 +96,7 @@ num_topics = int(x)  # Adjust this number based on your data and goals
 # Train the LDA model
 lda_model = LdaModel(corpus=corpus, id2word=dictionary, num_topics=num_topics, random_state=42)
 
-for idx, topic in lda_model.print_topics(num_words=4):
+for idx, topic in lda_model.print_topics(num_words=6):
     print(f"Topic #{idx}: {topic}")
-#Next Steps: 
-#Feed the pre-processed data to the model
-#Train an existing model on our pre-processed data
-#Use that model to get ouputs as needed
-# Get the dominant topic for each document
-dominant_topics = []
-
-for doc in corpus:
-    topic_probs = lda_model[doc]
-    # Get the topic with the highest probability
-    dominant_topic = max(topic_probs, key=lambda x: x[1])[0]
-    dominant_topics.append(dominant_topic)
-
-# Add the dominant topic information to the DataFrame
-data['dominant_topic'] = dominant_topics
-grouped = data.groupby('username')
-
-# Create a dictionary with usernames as keys and lists of unique topics as values
-user_topics_dict = {name: list(set(group['dominant_topic'])) for name, group in grouped}
-
-# Filter the dictionary to keep only entries with more than one topic
-user_topics_dict_filtered = {k: v for k, v in user_topics_dict.items() if len(v) > 2}
-
-# Print the filtered dictionary
-print(user_topics_dict_filtered)
+model_path = "lda_model.gensim"
+lda_model.save(model_path)

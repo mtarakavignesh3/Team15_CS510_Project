@@ -1,0 +1,26 @@
+Topic #0: 0.118*"sad" + 0.083*"me" + 0.037*"guy" + 0.036*"make" + 0.032*"hous" + 0.032*"haha"
+Topic #1: 0.058*"night" + 0.050*"watch" + 0.050*"bed" + 0.048*"morn" + 0.046*"tonight" + 0.035*"summer"
+Topic #2: 0.112*"im" + 0.093*"lol" + 0.089*"love" + 0.080*"hope" + 0.052*"you" + 0.030*"feel"
+Topic #3: 0.076*"thing" + 0.050*"show" + 0.038*"hard" + 0.037*"lot" + 0.034*"car" + 0.031*"shit"
+Topic #4: 0.226*"day" + 0.042*"today" + 0.040*"long" + 0.034*"man" + 0.033*"time" + 0.025*"run"
+Topic #5: 0.216*"miss" + 0.056*"gonna" + 0.053*"rain" + 0.039*"live" + 0.034*"great" + 0.028*"weekend"
+Topic #6: 0.124*"feel" + 0.088*"bad" + 0.055*"hurt" + 0.047*"now" + 0.038*"good" + 0.022*"hot"
+Topic #7: 0.048*"fuck" + 0.045*"die" + 0.040*"didnt" + 0.026*"dream" + 0.024*"heart" + 0.023*"thi"
+Topic #8: 0.139*"home" + 0.063*"bore" + 0.043*"talk" + 0.036*"job" + 0.032*"stay" + 0.030*"here"
+Topic #9: 0.068*"week" + 0.051*"wait" + 0.040*"hour" + 0.036*"3" + 0.034*"exam" + 0.030*"omg"
+Topic #10: 0.063*"twitter" + 0.057*"friend" + 0.042*"fun" + 0.041*"too" + 0.039*"find" + 0.038*"again"
+Topic #11: 0.185*"work" + 0.092*"back" + 0.061*"sleep" + 0.058*"tomorrow" + 0.047*"school" + 0.040*"tire"
+Topic #12: 0.059*"ugh" + 0.059*"play" + 0.041*"want" + 0.038*"think" + 0.029*"turn" + 0.023*"problem"
+Topic #13: 0.081*"it" + 0.063*"suck" + 0.055*"wanna" + 0.038*"lost" + 0.033*"eat" + 0.023*"game"
+Topic #14: 0.055*"left" + 0.040*"stupid" + 0.038*"studi" + 0.038*"yesterday" + 0.034*"mom" + 0.033*"follow"
+Topic #15: 0.107*"hate" + 0.076*"2" + 0.071*"dont" + 0.047*"damn" + 0.031*"well" + 0.029*"anymor"
+Topic #16: 0.085*"sick" + 0.052*"tweet" + 0.042*"poor" + 0.036*"hear" + 0.035*"readi" + 0.030*"out"
+Topic #17: 0.049*"call" + 0.042*"life" + 0.035*"happen" + 0.035*"nice" + 0.032*"headach" + 0.031*"woke"
+Topic #18: 0.055*"year" + 0.052*"leav" + 0.043*"start" + 0.031*"though" + 0.029*"gotta" + 0.028*"till"
+Topic #19: 0.053*"yeah" + 0.040*"guess" + 0.039*"thought" + 0.030*"put" + 0.030*"aww" + 0.029*"move"
+
+Cluster 1:Emotional States: T0, T2, T6, T7, T1
+Cluster 2:Daily Life and Work : T1, T4, T11
+Cluster 3:Personal Experiences and Relationships : T5, T8, T10
+Cluster 4: Struggle and Conflict: T3, T7, T15
+Cluster 5: Changes and Transitions : T14, T18, T19
