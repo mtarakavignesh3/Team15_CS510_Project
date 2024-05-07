@@ -14,6 +14,6 @@ pip install <module_name>
 3)Execute the execution.py:
 python execution.py
 
-4)This will generate an excel sheet named oputput with added colums category and sentiment label.
+4)This will generate an excel sheet named output with added colums category and sentiment label.
 
 5)Provide this output sheet to the PowerBI tool(or any other tool) so that it can visualized according to the requirements.
